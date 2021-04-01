@@ -7,3 +7,4 @@ autopep8
 scikit-learn
 sqlalchemy
 psycopg2-binary
+eli5
