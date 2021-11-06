@@ -134,12 +134,6 @@ def generate_shot_plays(plays, games):
     return pd.concat([get_shot_plays_team(shot_plays, is_team_play=True),
                       get_shot_plays_team(shot_plays, is_team_play=False)])
 
-
-def fuck_me(row, games):
-    print(row['game_id'])
-    return games[games['id'] == row['game_id']]['season']
-
-
 def get_shot_plays_team(shot_plays, is_team_play):
     print('Building shot plays for team')
 
