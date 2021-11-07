@@ -2,8 +2,7 @@ import pandas as pd
 from tqdm import tqdm
 from sqlalchemy import create_engine
 
-# pg_cred = 'postgres://begehrbqtxewcj:cfb27a4ff83dbcc3fef1d7a8e40fa176587a9ab71fadea07aa1c945f94c68fda@ec2-52-200-48-116.compute-1.amazonaws.com:5432/de2bcjaimtiij'
-pg_cred = 'postgresql://postgres:changeme@172.17.0.1/table_hockey'
+# pg_cred = "POSTGRES_URI"
 engine = create_engine(pg_cred)
 
 def query_sql(query):
